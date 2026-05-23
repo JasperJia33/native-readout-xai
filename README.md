@@ -2,7 +2,7 @@
 
 Multi-model comparison framework for industrial visual inspection, testing the **native-readout hypothesis**: explanation faithfulness depends on structural distance between explainer and model's native decision mechanism. Supports four model families (ResNet18+CBAM, DenseNet121, Swin-Tiny, ViT-Tiny), config-driven experiments, Grad-CAM / Attention-Rollout / RISE explainability, **quantitative faithfulness metrics** (Deletion / Insertion AUC, Stability), **perturbation-baseline sensitivity analysis**, and paper-ready Jupyter reports.
 
-**Paper:** *Architecture-Aware Explanation Auditing for Industrial Visual Inspection*
+**Paper:** [*Architecture-Aware Explanation Auditing for Industrial Visual Inspection*](https://arxiv.org/abs/2605.14255)
 
 ## Setup
 
