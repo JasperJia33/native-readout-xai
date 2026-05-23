@@ -1,0 +1,74 @@
+# ==================================
+# Python 核心忽略文件
+# ==================================
+# 编译文件
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# 分发/打包文件
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# 虚拟环境
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+.venv/
+
+# ==================================
+# Jupyter Notebook / ipynb 专用
+# ==================================
+# 检查点文件（自动生成，无需提交）
+.ipynb_checkpoints/
+
+# 运行输出的临时文件
+*~
+*.ipynb.bak
+
+# 可选：忽略 notebook 运行结果（只保留代码）
+# 取消下面注释可忽略所有ipynb的输出，只提交纯代码
+# *.ipynb
+
+# ==================================
+# 编辑器 / IDE 配置
+# ==================================
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# ==================================
+# 系统 / 缓存 / 日志
+# ==================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# 日志文件
+*.log
+logs/
+*.tmp
+*.temp
+*Zone.Identifier

@@ -1,0 +1,2 @@
+family,n_runs,n_samples,deletion_auc_mean,deletion_auc_std,insertion_auc_mean,insertion_auc_std,stability_mean,stability_std,defect_corr_mean,defect_corr_std
+swin_tiny,1,198,0.44376148835099904,0.246377101511235,0.4940048168259767,0.21820389185646558,0.8963589098116366,0.09056031091435054,0.0498978020076515,0.09962307160608955

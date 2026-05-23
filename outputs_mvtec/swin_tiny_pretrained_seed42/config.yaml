@@ -1,0 +1,32 @@
+augmentation:
+  enabled: true
+  flip_prob: 0.5
+  noise_prob: 0.3
+  noise_std: 0.02
+  rotation_prob: 0.5
+data:
+  cache_dir: data_mvtec_ad/cache_256
+  image_size: 256
+  num_workers: 0
+  path: data_mvtec_ad/Voxel51/mvtec-ad
+model:
+  dropout: 0.5
+  name: swin_tiny_pretrained_rgb
+  num_classes: 2
+  pretrained: true
+  window_size: 7
+training:
+  batch_size: 32
+  batch_size_eval: 64
+  early_stop_metric: val_f1_macro
+  early_stop_patience: 15
+  epochs: 100
+  grad_clip_norm: 1.0
+  loss: cross_entropy
+  lr: 0.0001
+  mixed_precision: true
+  optimizer: adamw
+  scheduler:
+    type: cosine
+  seed: 42
+  weight_decay: 0.05

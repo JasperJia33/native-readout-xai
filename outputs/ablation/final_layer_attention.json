@@ -1,0 +1,35 @@
+[
+  {
+    "method": "final_layer_cls_attention",
+    "model": "vit_tiny",
+    "seed": 42,
+    "run_dir": "outputs/run0_vit_tiny_v3",
+    "n_samples": 198,
+    "deletion_auc_mean": 0.3401126236214396,
+    "deletion_auc_std": 0.28984662619011864,
+    "insertion_auc_mean": 0.5953146054187104,
+    "insertion_auc_std": 0.31821095478541983
+  },
+  {
+    "method": "final_layer_cls_attention",
+    "model": "vit_tiny",
+    "seed": 123,
+    "run_dir": "outputs/vit_tiny_v3_seed123",
+    "n_samples": 198,
+    "deletion_auc_mean": 0.4005966820347034,
+    "deletion_auc_std": 0.2763717365740791,
+    "insertion_auc_mean": 0.4871098947685973,
+    "insertion_auc_std": 0.3233873721929656
+  },
+  {
+    "method": "final_layer_cls_attention",
+    "model": "vit_tiny",
+    "seed": 456,
+    "run_dir": "outputs/vit_tiny_v3_seed456",
+    "n_samples": 198,
+    "deletion_auc_mean": 0.3588870194051693,
+    "deletion_auc_std": 0.3306970601468183,
+    "insertion_auc_mean": 0.5322196135365671,
+    "insertion_auc_std": 0.3429056130112141
+  }
+]

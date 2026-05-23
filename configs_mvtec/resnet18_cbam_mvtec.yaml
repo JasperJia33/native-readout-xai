@@ -1,0 +1,36 @@
+model:
+  name: resnet18_cbam_rgb
+  num_classes: 2
+  pretrained: true
+  dropout: 0.5
+  cbam_reduction: 16
+  cbam_kernel_size: 7
+
+data:
+  path: data_mvtec_ad/Voxel51/mvtec-ad
+  cache_dir: data_mvtec_ad/cache_256
+  image_size: 256
+  num_workers: 0
+
+training:
+  seed: 42
+  batch_size: 32
+  batch_size_eval: 64
+  epochs: 100
+  lr: 0.0001
+  optimizer: adamw
+  weight_decay: 0.01
+  scheduler:
+    type: cosine
+  loss: cross_entropy
+  early_stop_patience: 15
+  early_stop_metric: val_balanced_acc
+  grad_clip_norm: 1.0
+  mixed_precision: true
+
+augmentation:
+  enabled: true
+  rotation_prob: 0.5
+  flip_prob: 0.5
+  noise_prob: 0.3
+  noise_std: 0.02

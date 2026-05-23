@@ -1,0 +1,10 @@
+{
+  "run_name": "vit_tiny_pretrained_seed123",
+  "model": "vit_tiny_pretrained_rgb",
+  "dataset": "mvtec_ad",
+  "params": 5536706,
+  "accuracy": 0.9216417910447762,
+  "balanced_accuracy": 0.8534907730029682,
+  "f1_macro": 0.8817445549778558,
+  "epochs_trained": 82
+}

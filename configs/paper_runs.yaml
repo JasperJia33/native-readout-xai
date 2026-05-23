@@ -1,0 +1,40 @@
+# Paper-runs registry. Defines which runs are used for the interpretability
+# paper analysis — 3 seeds per family. The seed=42 runs already exist; seeds
+# 123 and 456 are produced by run_seeds.sh.
+#
+# Each family points to one "primary" config (used for family-level display
+# name, hyperparameters, etc.) and the 3 run directories.
+
+paper_runs:
+  resnet18_cbam:
+    config: configs/resnet18_cbam.yaml
+    display_name: "ResNet18+CBAM"
+    family: "CNN + engineered attention"
+    runs:
+      - outputs/run0_resnet18_cbam       # seed 42
+      - outputs/resnet18_cbam_seed123
+      - outputs/resnet18_cbam_seed456
+  densenet121:
+    config: configs/densenet121.yaml
+    display_name: "DenseNet121"
+    family: "Pure CNN"
+    runs:
+      - outputs/run0_densenet121         # seed 42
+      - outputs/densenet121_seed123
+      - outputs/densenet121_seed456
+  vit_tiny:
+    config: configs/vit_tiny_v3.yaml
+    display_name: "ViT-Tiny"
+    family: "Pure Transformer"
+    runs:
+      - outputs/run0_vit_tiny_v3         # seed 42 (v3 config, best ViT variant)
+      - outputs/vit_tiny_v3_seed123
+      - outputs/vit_tiny_v3_seed456
+  swin_tiny:
+    config: configs/swin_tiny.yaml
+    display_name: "Swin-Tiny"
+    family: "Hierarchical Transformer"
+    runs:
+      - outputs/swin_tiny_seed7
+      - outputs/swin_tiny_seed123
+      - outputs/swin_tiny_seed456

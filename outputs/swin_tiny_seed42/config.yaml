@@ -1,0 +1,41 @@
+augmentation:
+  enabled: true
+  flip_prob: 0.5
+  minority_boost: true
+  noise_prob: 0.3
+  noise_std: 0.05
+  rotation_prob: 0.7
+data:
+  cache_preprocessed: true
+  exclude_none: false
+  image_size: 64
+  max_samples_per_class: null
+  num_workers: 4
+  path: data/LSWMD.pkl
+  split_mode: lot_group
+  test_size: 0.2
+  val_size: 0.15
+model:
+  dropout: 0.3
+  name: swin_tiny
+  num_classes: 9
+  pretrained: false
+  window_size: 4
+training:
+  batch_size: 64
+  batch_size_eval: 64
+  early_stop_metric: val_f1_macro
+  early_stop_patience: 20
+  epochs: 100
+  focal_gamma: 2.0
+  grad_clip_norm: 1.0
+  loss: cross_entropy
+  lr: 0.0003
+  mixed_precision: true
+  optimizer: adamw
+  scheduler:
+    factor: 0.5
+    patience: 5
+    type: cosine
+  seed: 42
+  weight_decay: 0.05

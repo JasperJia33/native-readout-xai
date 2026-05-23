@@ -1,0 +1,10 @@
+{
+  "run_name": "resnet18_cbam_seed456",
+  "model": "resnet18_cbam_rgb",
+  "dataset": "mvtec_ad",
+  "params": 11222474,
+  "accuracy": 0.9639303482587065,
+  "balanced_accuracy": 0.943437862950058,
+  "f1_macro": 0.9491945342069654,
+  "epochs_trained": 49
+}

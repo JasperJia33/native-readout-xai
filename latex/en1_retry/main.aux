@@ -1,0 +1,96 @@
+\relax 
+\providecommand\babel@aux[2]{}
+\@nameuse{bbl@beforestart}
+\providecommand\hyper@newdestlabel[2]{}
+\providecommand\HyField@AuxAddToFields[1]{}
+\providecommand\HyField@AuxAddToCoFields[2]{}
+\babel@aux{english}{}
+\@writefile{toc}{\contentsline {section}{\numberline {1}Introduction}{1}{section.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.1}Motivation}{1}{subsection.1.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.2}The native-readout hypothesis}{2}{subsection.1.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.3}Contributions}{3}{subsection.1.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {2}Related Work}{4}{section.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1}Wafer-map XAI}{4}{subsection.2.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2}Faithfulness in the broader XAI literature}{4}{subsection.2.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3}Model-agnostic explanations and cross-dataset validation}{4}{subsection.2.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.4}Trustworthy AI in industrial visual inspection}{5}{subsection.2.4}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces \textbf  {Figure 1.} WM-811K labelled class distribution}}{5}{figure.caption.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {3}Methods}{5}{section.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Dataset}{5}{subsection.3.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces \textbf  {Figure 2.} Sample wafer maps (4 per class, 64$\times $64). Black = background, red = normal die, yellow = defect die}}{6}{figure.caption.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Model architectures}{7}{subsection.3.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.2.1}ResNet18 + CBAM}{7}{subsubsection.3.2.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.2.2}DenseNet121}{7}{subsubsection.3.2.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.2.3}ViT-Tiny}{8}{subsubsection.3.2.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.2.4}Swin-Tiny}{8}{subsubsection.3.2.4}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces \textbf  {Table 1.} Model family summary}}{9}{table.caption.10}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}Interpretability methods}{9}{subsection.3.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.3.1}Grad-CAM (for CNNs and Swin)}{9}{subsubsection.3.3.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.3.2}Attention Rollout (for ViT)}{10}{subsubsection.3.3.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.3.3}RISE (model-agnostic control)}{10}{subsubsection.3.3.3}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces \textbf  {Table 2.} Interpretability method assignment}}{11}{table.caption.16}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4}Training and evaluation protocol}{11}{subsection.3.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.4.1}Training}{11}{subsubsection.3.4.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.4.2}Seeds and variance estimation}{11}{subsubsection.3.4.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.4.3}Faithfulness metrics}{11}{subsubsection.3.4.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.4.4}Sample size and statistical analysis}{12}{subsubsection.3.4.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.5}Model-agnostic control: RISE}{13}{subsection.3.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.6}Boundary-condition dataset: MVTec AD}{13}{subsection.3.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {4}Results}{13}{section.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Classification performance}{13}{subsection.4.1}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces \textbf  {Table 3.} Classification performance (mean $\pm $ std across 3 seeds)}}{14}{table.caption.20}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces \textbf  {Figure 3.} Per-class F1 radar (mean across 3 seeds)}}{14}{figure.caption.21}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Qualitative interpretability}{14}{subsection.4.2}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces \textbf  {Figure 4a.} ResNet18+CBAM --- Center-class explanation. Left to right: original wafer, Grad-CAM heatmap, prediction overlay, and CBAM spatial attention at layers 1--4. The Grad-CAM map is nearly uniformly dark (degenerate), providing no spatial localisation of the central defect. The CBAM attention maps (cbam2--cbam3) show coarse quadrant-level patterns, illustrating a case where the post-hoc gradient signal provides little spatial localisation of the visible central defect pattern}}{15}{figure.caption.22}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces \textbf  {Figure 4b.} DenseNet121 --- Center-class explanation. Left to right: original wafer, Grad-CAM heatmap, occlusion sensitivity map, and prediction overlay. Grad-CAM places its hot zone in the lower-left corner --- far from the central defect cluster --- suggesting that the gradient proxy does not recover defect location for this sample. The occlusion sensitivity map (a model-agnostic reference) does localise the center, highlighting the gap between what the gradient path reports and where the model is actually sensitive}}{15}{figure.caption.23}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces \textbf  {Figure 4c.} ViT-Tiny --- Center-class explanation. Left to right: original wafer, Grad-CAM (blank, as expected for a non-CNN architecture), Attention Rollout heatmap, and prediction overlay. Rollout concentrates activation on the central defect cluster, consistent with the native-readout hypothesis: the explanation is derived from the model's forward-pass attention pathway and spatially aligns with the defect pattern in this sample}}{16}{figure.caption.24}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces \textbf  {Figure 5.} Qualitative heatmap comparison (highest-confidence correct sample per class)}}{17}{figure.caption.25}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3}Quantitative faithfulness (aggregate)}{18}{subsection.4.3}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {4}{\ignorespaces \textbf  {Table 4.} Quantitative faithfulness metrics (mean $\pm $ std, n=594)}}{19}{table.caption.26}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces \textbf  {Figure 6.} Deletion and Insertion curves (mean $\pm $ std across 594 samples)}}{19}{figure.caption.27}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces \textbf  {Figure 7.} Explanation stability distribution (per-sample cosine similarity across K=5 perturbations)}}{20}{figure.caption.28}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.4}Per-class breakdown, effect size, and bootstrap confidence intervals}{20}{subsection.4.4}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {5}{\ignorespaces \textbf  {Table 5.} Per-class Deletion AUC (lower = more faithful). ViT-Tiny is most faithful in 8/9 classes}}{21}{table.caption.29}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {6}{\ignorespaces \textbf  {Table 6.} Bootstrap 95 \% confidence intervals (2,000 resamples) and Cohen's \emph  {d} for pooled Deletion AUC over the evaluated sample set. Because samples are nested within only three independently trained seeds, these intervals describe uncertainty over the sample pool and should not be interpreted as a substitute for a hierarchical or seed-level uncertainty estimate. $|d| > 1.1$ indicates a large effect}}{21}{table.caption.30}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.5}Model-agnostic control: RISE on WM-811K}{21}{subsection.4.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.6}Perturbation-baseline sensitivity}{22}{subsection.4.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.7}Boundary-condition study: MVTec AD (exploratory)}{23}{subsection.4.7}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.7.1}Classification performance}{23}{subsubsection.4.7.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.7.2}Interpretability: native methods vs. RISE}{23}{subsubsection.4.7.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.8}RISE mask-resolution ablation (MVTec AD)}{24}{subsection.4.8}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {5}Discussion}{24}{section.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}Testing the native-readout hypothesis}{24}{subsection.5.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2}Classification versus interpretability}{26}{subsection.5.2}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {7}{\ignorespaces \textbf  {Table 12.} Classification versus faithfulness on WM-811K (F1 Macro: 3-seed mean; faithfulness metrics: pooled across 594 samples)}}{26}{table.caption.31}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3}Does visual coherence imply faithfulness?}{27}{subsection.5.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.4}Cross-dataset analysis: boundary conditions}{27}{subsection.5.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.5}Practical recommendations}{28}{subsection.5.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.6}Practical audit workflow for industrial visual inspection}{30}{subsection.5.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.7}Limitations and threats to validity}{31}{subsection.5.7}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {6}Conclusion}{33}{section.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{Supplementary Material}{36}{section*.32}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{S1. Experimental workflow}{36}{section*.33}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{S2. Code overview}{37}{section*.34}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{S3. Training curves}{37}{section*.35}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces \textbf  {Supplementary Figure S1.} Training and validation loss curves, WM-811K (seed 42)}}{37}{figure.caption.36}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {8}{\ignorespaces \textbf  {Supplementary Table S1a.} Training hyperparameters per family (WM-811K)}}{38}{table.caption.38}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{S4. Complete hyperparameter tables}{38}{section*.37}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{S5. Raw qualitative heatmaps (no wafer overlay)}{38}{section*.40}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {9}{\ignorespaces \textbf  {Supplementary Table S3.} Per-seed classification results for all nine WM-811K paper runs}}{39}{table.caption.39}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {11}{\ignorespaces \textbf  {Supplementary Figure S2.} Raw qualitative heatmaps, WM-811K (no wafer overlay). Same samples as Figure 5; each heatmap is normalised to its own min--max range for a fair visual comparison}}{40}{figure.caption.41}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{S6. Spatial alignment with defect distribution}{41}{section*.42}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {10}{\ignorespaces \textbf  {Supplementary Table S4.} Spearman rank correlation between heatmap intensity and wafer defect-pixel distribution, WM-811K (n=594 samples per family). Values near zero indicate no spatial alignment}}{41}{table.caption.43}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{S7. Per-seed Deletion AUC}{41}{section*.44}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {11}{\ignorespaces \textbf  {Supplementary Table S5.} Per-seed mean Deletion AUC, WM-811K (200 balanced-stratified samples per seed)}}{41}{table.caption.45}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{S8. Ablation: random-pixel baseline}{41}{section*.46}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {12}{\ignorespaces \textbf  {Supplementary Table S6.} Heatmap-based vs random-pixel Deletion/Insertion AUC, WM-811K (seed 42)}}{41}{table.caption.47}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{S9. Ablation: Grad-CAM on ViT (non-native control)}{43}{section*.48}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {13}{\ignorespaces \textbf  {Supplementary Table S7.} ViT-Tiny: native (Rollout) vs non-native (Grad-CAM) explainer, WM-811K}}{43}{table.caption.49}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{S10. Ablation: Final-layer CLS attention (rollout-depth control)}{43}{section*.50}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{S11. Ablation: commonly-correct subset}{44}{section*.51}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {14}{\ignorespaces \textbf  {Supplementary Table S11.} Faithfulness on commonly-correct samples only, WM-811K}}{44}{table.caption.52}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{S12. Ablation: top-k sensitivity}{44}{section*.53}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {15}{\ignorespaces \textbf  {Supplementary Table S12.} Mean confidence drop ($\Delta $p) after removing top-k\% pixels, WM-811K}}{44}{table.caption.54}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{S13. Swin-Tiny supplementary details}{44}{section*.55}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{S14. Code and data availability}{45}{section*.56}\protected@file@percent }
+\gdef \@abspage@last{46}

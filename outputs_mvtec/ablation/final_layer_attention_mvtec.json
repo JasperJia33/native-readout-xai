@@ -1,0 +1,11 @@
+{
+  "method": "final_layer_cls_attention",
+  "model": "vit_tiny_pretrained",
+  "dataset": "mvtec",
+  "seed": 42,
+  "n_samples": 200,
+  "deletion_auc_mean": 0.8574915039733645,
+  "deletion_auc_std": 0.30525655061626794,
+  "insertion_auc_mean": 0.8566045402286326,
+  "insertion_auc_std": 0.2812066056482566
+}

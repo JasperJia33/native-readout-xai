@@ -1,0 +1,10 @@
+{
+  "run_name": "densenet121_seed456",
+  "model": "densenet121_rgb",
+  "dataset": "mvtec_ad",
+  "params": 6955906,
+  "accuracy": 0.9713930348258707,
+  "balanced_accuracy": 0.9446509226997032,
+  "f1_macro": 0.9589219112018429,
+  "epochs_trained": 40
+}

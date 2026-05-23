@@ -1,0 +1,31 @@
+# MVTec AD paper-runs registry.
+# Binary classification: good (0) vs defective (1).
+# 3 families × 3 seeds = 9 runs.
+
+paper_runs:
+  resnet18_cbam:
+    config: configs_mvtec/resnet18_cbam_mvtec.yaml
+    display_name: "ResNet18+CBAM (RGB)"
+    runs:
+      - outputs_mvtec/resnet18_cbam_seed42
+      - outputs_mvtec/resnet18_cbam_seed123
+      - outputs_mvtec/resnet18_cbam_seed456
+  densenet121:
+    config: configs_mvtec/densenet121_mvtec.yaml
+    display_name: "DenseNet121 (RGB)"
+    runs:
+      - outputs_mvtec/densenet121_seed42
+      - outputs_mvtec/densenet121_seed123
+      - outputs_mvtec/densenet121_seed456
+  vit_tiny:
+    config: configs_mvtec/vit_tiny_pretrained_mvtec.yaml
+    display_name: "ViT-Tiny (RGB, pretrained)"
+    runs:
+      - outputs_mvtec/vit_tiny_pretrained_seed42
+      - outputs_mvtec/vit_tiny_pretrained_seed123
+      - outputs_mvtec/vit_tiny_pretrained_seed456
+  swin_tiny:
+    config: configs_mvtec/swin_tiny_pretrained_mvtec.yaml
+    display_name: "Swin-Tiny (RGB, pretrained)"
+    runs:
+      - outputs_mvtec/swin_tiny_pretrained_seed42
